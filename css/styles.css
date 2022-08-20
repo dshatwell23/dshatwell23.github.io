@@ -98,3 +98,20 @@ ul {
     text-align: justify;
     text-justify: inter-word;
   }
+
+  .project {
+    text-align: justify;
+    text-justify: inter-word;
+  }
+
+  h4.project {
+    color:#555;
+    font-weight: normal;
+  }
+
+  .thumbnail {
+    float: left;
+    margin-right: 1em;
+    border-radius: 5%;
+    width: 200px;
+  }
