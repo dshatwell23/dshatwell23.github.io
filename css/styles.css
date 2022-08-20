@@ -115,3 +115,36 @@ ul {
     border-radius: 5%;
     width: 200px;
   }
+
+  .btn {
+    background: #dddddd;
+    color: black;
+    padding: 1px 5px;
+    font-size: 12px;
+    line-height: 1.5;
+    border-radius: 3px;
+    border-color: #ccc;
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    border: 1px solid transparent;
+  }
+
+  .btn a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+  .btn a:hover {
+    border-color: #aaa;
+    color: black;
+}
