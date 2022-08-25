@@ -3,8 +3,8 @@ body {
     font-size: 14px;
     background-color: white;
     margin: 0px;
-    margin-left: 100px;
-    margin-right: 100px;
+    /*margin-left: 100px;
+    margin-right: 100px;*/
 }
 
 .bodydiv {
@@ -12,13 +12,26 @@ body {
 }
 
 .row {
+  max-width: 900px;
+  margin: 0 auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  min-width: 500px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/*
+.row {
     max-width: 900px;
-    min-width: 700px;
     margin: 0 auto;
     padding-top: 10px;
     padding-bottom: 10px;
     min-width: 500px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
+*/
 
 .topnav {
     background-color: #333;
