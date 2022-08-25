@@ -118,6 +118,10 @@ ul {
     text-justify: inter-word;
   }
 
+  div.project {
+    padding-bottom: 20px;
+  }
+
   h4.project {
     color:#555;
     font-weight: normal;
