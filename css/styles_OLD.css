@@ -1,14 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600&display=swap');
-
-html {
-  font-family: 'Kanit', sans-serif;
-}
-
-.nav-item {
-  margin: 0.5vh 1.5vh;
-}
-
 body {
+    font-family: sans-serif;
     font-size: 14px;
     background-color: white;
     margin: 0px;
@@ -25,9 +16,10 @@ body {
   margin: 0 auto;
   padding-top: 10px;
   padding-bottom: 10px;
+  min-width: 500px;
   padding-left: 10px;
   padding-right: 10px;
-} */
+}
 
 /*
 .row {
@@ -97,7 +89,6 @@ ul {
 
   .bio-image {
     width: 200px;
-    height: 200px;
     border-radius: 100px;
   }
 
@@ -143,7 +134,7 @@ ul {
     width: 200px;
   }
 
-  /* .btn {
+  .btn {
     background: #dddddd;
     color: black;
     padding: 1px 5px;
@@ -174,30 +165,4 @@ ul {
   .btn a:hover {
     border-color: #aaa;
     color: black;
-} */
-
-.divider {
-  flex-grow: 1;
-  height: 0.1rem;
-  background-color: white;
-  opacity: 0.2;
-}
-
-.logo-jobs-desc {
-  text-align: center;
-}
-
-.logo-container {
-  height: 120px;
-  display: flex;
-  align-items: center;
-}
-
-.logo {
-  display: block;
-  margin: auto;
-}
-
-.nav-item {
-  font-size: 1rem;
 }

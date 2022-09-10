@@ -4,22 +4,33 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="David Shatwell's personal webpage">
-    <meta name="keywords" content="David Shatwell">
-    <meta name="author" content="David Shatwell">
+    <!--Poner keywords-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="David Shatwell's portfolio">
 
     <title>David Shatwell</title>
 
-    <link rel="icon" href="images/david_shatwell_small.png">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="icon" type="images/david_shatwell_small.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
 
 <body>
+    <!-- <div class="topnav row">
+        <nav>
+            <ul>
+                <li class="active"><a href="#bio">Bio</a></li>
+                <li class="active"><a href="#projects">Projects</a></li>
+                <li class="active"><a href="https://github.com/dshatwell23" target="_blank">GitHub</a></li>
+                <li class="active"><a href="documents/david_shatwell.pdf" target="_blank">CV</a></li>
+            </ul>
+        </nav>
+    </div> -->
 
-    <nav class="navbar navbar-dark bg-dark navbar-expand-sm">
+    <nav class="navbar navbar-dark navbar-expand-sm fixed-top bg-dark">
         <div class="container">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
                 <span class="navbar-toggler-icon"></span>
@@ -27,7 +38,7 @@
 
             <div class="collapse navbar-collapse" id="Navbar">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item"><a class="nav-link" href="#bio">Bio</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="#bio">Bio</a></li>
                     <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
                     <li class="nav-item"><a class="nav-link" href="https://github.com/dshatwell23" target="_blank">Github</a></li>
                     <li class="nav-item"><a class="nav-link" href="documents/david_shatwell.pdf" target="_blank">CV</a></li>
@@ -37,9 +48,25 @@
         </div>
     </nav>
 
+    <!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="#">Features</a>
+            <a class="nav-item nav-link" href="#">Pricing</a>
+            <a class="nav-item nav-link disabled" href="#">Disabled</a>
+          </div>
+        </div>
+      </nav> -->
+
+
+    
     <div class="container">
-        
-        <!-- <div class="row toprow">
+        <div class="row toprow">
             <div class="image-column">
                 <img class="bio-image" src="images/david_shatwell_medium_no_bg.png" alt="david-shatwell">
             </div>
@@ -54,73 +81,16 @@
                 </p>
                 <p>Research interests: Computer Vision, Machine Learning</p>
             </div>
-        </div> -->
-
-        <div class="row row-content">
-            <div class="col-12 col-sm-5 d-flex justify-content-center">
-                <img class="bio-image" src="images/david_shatwell_medium_no_bg.png" alt="david-shatwell">
-            </div>
-            <div class="col-12 col-sm-7 p-0 d-flex flex-column justify-content-center">
-                <h1>David Shatwell</h1>
-                <p>
-                    Researcher at <a href="http://www.hochschildmining.com/en/home">Hochschild Mining</a>
-                    <br>
-                    R&D Department
-                    <br>
-                    Email: <a href="mailto:dshatwell23@gmail.com">dshatwell23&#64;gmail.com</a>
-                </p>
-                <p>Research interests: Computer Vision, Machine Learning</p>
-            </div>
         </div>
 
-        <hr>
-        <div class="row row-content">
+        <div class="row">
+            <hr>
             <h2 id="bio">Bio</h2>
             <p class="bio">I am a researcher in the R&D department at <a href="http://www.hochschildmining.com/en/home" target="_blank">Hochschild Mining</a>, a gold and silver mining company operating in Peru. I am currently responsible for the Ore Sorting Research Lab, where we are developing new mineral classification algorithms using computer vision and machine learning. Previously, I did an internship in the R&D department at the <a href="https://www.igp.gob.pe/observatorios/radio-observatorio-jicamarca/?page_id=6609" target="_blank">Jicamarca Radio Observatory</a>, where I worked with FPGAs and microprocessors under the supervision of <a href="https://www.igp.gob.pe/observatorios/radio-observatorio-jicamarca/?page_id=9288" target="_blank">Joaquin Verastegui</a> and <a href="https://www.igp.gob.pe/observatorios/radio-observatorio-jicamarca/?page_id=9079" target="_blank">John Rojas</a>. I have also worked as a computer vision consultant in occupational health clinic <a href="https://wh.com.pe/" target="_blank">Work & Health</a>, where I developed projects using pose estimation and thermal imaging.</p>
             <p class="bio">I got my undergraduate degree from <a href="https://utec.edu.pe/en" target="_blank">University of Engineering and Technology - UTEC</a> in Electrical Engineering, where I took elective courses on Image Processing, Machine Learning and Communications Engineering. Under the supervision of <a href="https://utec.edu.pe/en/faculty/victor-manuel-murray-herrera" target="_blank">Victor Murray</a>, I wrote my honors thesis on mineral classification using color and texture features of digital images. My thesis achieved the highest possible grade and won second place in the undergraduate thesis competition organized by UTEC. During my studies, I also worked as TA of the Digital Circuits Lab, designing, supervising, and grading lab projects with FPGAs.</p>
         </div>
 
-        <div class="row row-content">
-            <div class="col-12 col-sm-6 col-md-3">
-                <div class="d-flex flex-column align-items-center">
-                    <div class="logo-container">
-                        <a href="https://utec.edu.pe/en" target="_blank"><img src="images/utec_logo.png" alt="utec-logo" class="logo"></a>
-                    </div>
-                    
-                    <span class="logo-jobs-desc">University of Engineering and Technology - UTEC<br>2015-2020</span>
-                </div>
-            </div>
-
-            <div class="col-12 col-sm-6 col-md-3">
-                <div class="d-flex flex-column align-items-center">
-                    <div class="logo-container">
-                        <a href="https://www.igp.gob.pe/observatorios/radio-observatorio-jicamarca/?page_id=6609" target="_blank"><img src="images/roj_logo.png" alt="roj-logo" class="logo"></a>
-                    </div>
-                    <span class="logo-jobs-desc">Jicamarca Radio Observatory<br>Winter 2019</span>
-                </div>
-            </div>
-
-            <div class="col-12 col-sm-6 col-md-3">
-                <div class="d-flex flex-column align-items-center">
-                    <div class="logo-container">
-                        <a href="https://wh.com.pe/" target="_blank"><img src="images/wnh_logo.png" alt="wnh_logo" class="logo"></a>
-                    </div>
-                    <span class="logo-jobs-desc">Work & Health<br>2020-2021</span>
-                </div>
-            </div>
-
-            <div class="col-12 col-sm-6 col-md-3">
-                <div class="d-flex flex-column align-items-center">
-                    <div class="logo-container">
-                        <a href="http://www.hochschildmining.com/en/home" target="_blank"><img src="images/hoc_logo.png" alt="hoc_logo" class="logo"></a>
-                    </div>
-                    <span class="logo-jobs-desc">Hochschild Mining<br>2019-Present</span>
-                </div>
-            </div>
-
-        </div>
-
-        <!-- <div class="row">
+        <div class="row">
             <table>
                 <tr>
                     <td><a href="https://utec.edu.pe/en" target="_blank"><img src="images/utec_logo.png" alt="utec-logo" class="logo"></a></td>
@@ -135,10 +105,10 @@
                     <td>Hochschild Mining <br> 2019-Present</td>
                 </tr>
             </table>
-        </div> -->
+        </div>
 
-        <hr>
         <div class="row">
+            <hr>
             <h2 id="projects">Projects</h2>
 
             <div class="project">
@@ -146,15 +116,10 @@
                 <h4 class="project">Hugo Negreyros, David Shatwell</h4>
                 <img src="" alt="">
                 <p>Line-scan cameras are cameras that, unlike area-scan cameras, acquire a single row instead of a full 2D image. This type of cameras has several advantages over the traditional area-scan technology. In particular, they can capture images of objects moving at very high speeds with very little motion blur. In order to form 2D images, line-scan cameras are usually used on applications where a conveyor belt moves objects at a constant speed. In this project, we implemented a program used to synchronize and control two cameras at the same time. The first camera is a color camera (Teledyne Dalsa Spyder 3 GigE), while the second one is a 3D profiling camera (Automation Technology C2-2040 GigE), both of which are controlled using Gigabit Ethernet. We use the cameras to acquire color images, height profiles, and laser reflection/dispersion images, which are useful for identifying material properties in sorting applications.</p>
-                <!-- <div class="btn-group" role="group">
+                <div class="btn-group" role="group">
                     <p>
                         <a href="https://github.com/dshatwell23/linescan-cameras-control" class="btn" target="_blank" role="button">Code</a>
                     </p>
-                </div> -->
-                <div>
-                    <a href="https://github.com/dshatwell23/linescan-cameras-control" class="btn" target="_blank" role="button">
-                        <button type="button" class="btn btn-primary btn-sm">Code</button>
-                    </a>
                 </div>
             </div>
 
@@ -177,19 +142,11 @@
                 <h4 class="project">David Shatwell, Alejandro Weston, Oscar Ramos</h4>
                 <img src="images/poster_satellite_image_classification.png" alt="satellite_image_classification", class="thumbnail">
                 <p>Satellite image classification and analysis has many important applications in the real world, such as tracking deforestation and desertification levels, glacier movement, and even urban expansion. In this paper, we propose a satellite image analysis algorithm based on sub-image classification. The proposed algorithm can identify up to five different classes of terrain: city, sand, vegetation, mountain and water. In order to find the best possible image analysis algorithm, we trained and compared the classification performance of four common machine learning algorithms that require manual feature extraction and one deep learning algorithm with automatic feature extraction. All sub-images used to train and test the models were acquired from Google Earth at different heights. The models were tested using sub-images that come from the same images as the training set and also with sub-images that come from other images not used for training. After evaluating the performance of all models, the best one was selected for the task of satellite image analysis.</p>
-                <!-- <div class="btn-group" role="group">
+                <div class="btn-group" role="group">
                     <p>
                         <a href="documents/shatwell2022classification.pdf" class="btn" target="_blank" role="button">Paper</a>
                         <a href="https://github.com/dshatwell23/satellite-image-classification" class="btn" target="_blank" role="button">Code</a>
                     </p>
-                </div> -->
-                <div>
-                    <a href="documents/shatwell2022classification.pdf" class="btn" target="_blank" role="button">
-                        <button type="button" class="btn btn-primary btn-sm">Paper</button>
-                    </a>
-                    <a href="https://github.com/dshatwell23/satellite-image-classification" class="btn" target="_blank" role="button">
-                        <button type="button" class="btn btn-primary btn-sm">Code</button>
-                    </a>
                 </div>
             </div>
 
@@ -198,15 +155,10 @@
                 <h4 class="project">David Shatwell</h4>
                 <img src="images/poster_anthropometric_measurements.png" alt="poster_anthropometric_measurements" class="thumbnail">
                 <p>In occupational health clinics, doctors perform medical triage by measuring the vital signs of patients, as well as their anthropometric measurements, such as height and the circunference of the neck, thorax, abdomen and waist. This process is time consuming and can be automated to reduce patient waiting times. In this project, we propose an anthropometric measurement estimation algorithm using the OpenPose model developed by CMU Perceptual Computing Lab. The algorithm estimates the neck, thorax, abdomen and waist measurement projections of male patients using single frontal images. Future work will focus on developing regression models to estimate the circunference of the selected areas based on the frontal projections.</p>
-                <!-- <div class="btn-group" role="group">
+                <div class="btn-group" role="group">
                     <p>
                         <a href="https://github.com/dshatwell23/anthropometric-measurements" class="btn" target="_blank" role="button">Code</a>
                     </p>
-                </div> -->
-                <div>
-                    <a href="https://github.com/dshatwell23/anthropometric-measurements" class="btn" target="_blank" role="button">
-                        <button type="button" class="btn btn-primary btn-sm">Code</button>
-                    </a>
                 </div>
             </div>
 
@@ -215,15 +167,10 @@
                 <h4 class="project">David Shatwell</h4>
                 <img src="images/poster_back_temperature_analysis.png" alt="poster_back_temperature_analysis", class="thumbnail">
                 <p>This project, developed in partnership with a peruvian occupational health clinic, consists of an algorithm that computes temperature statistics of 10 different parts of the back of patients using thermal images and the OpenPose model, developed by the CMU Perceptual Computing Lab. The algorithm has three main stages. The first stage uses a color (RGB) image to find the location of several body parts of the patient. This keypoints are then used to define the 10 regions. Finally, we compute temperature statistics from each region. The proposed method could potentially be used by a health professional in the future to find lessions in the backs of patients.</p>
-                <!-- <div class="btn-group" role="group">
+                <div class="btn-group" role="group">
                     <p>
                         <a href="https://github.com/dshatwell23/back-temperature-analysis" class="btn" target="_blank" role="button">Code</a>
                     </p>
-                </div> -->
-                <div>
-                    <a href="https://github.com/dshatwell23/back-temperature-analysis" class="btn" target="_blank" role="button">
-                        <button type="button" class="btn btn-primary btn-sm">Code</button>
-                    </a>
                 </div>
             </div>
 
@@ -232,23 +179,12 @@
                 <h4 class="project">David Shatwell, Frank Salazar, Arturo Rojas-Moreno,</h4>
                 <img src="images/poster_2_dof_pid_contol.png" alt="poster_2_dof_pid_contol" class="thumbnail">
                 <p>This paper employs a 2–DOF (2 Degrees of Freedom) PID (Proportional Integral Derivative) controller to control the angular position of the rotational load of an industrial plant emulator. The plant consists of a DC servo motor that is connected to a speed reducer with backlash, which in turn is connected to a rotational load through an elastic belt. The performance of the 2–DOF PID control system is compared with the performance of a PID control system. Experimental results demonstrate that the former control system performs better in the presence of multiple disturbances such as backlash, friction and vibration by decreasing the magnitude of the oscillations in the steady state.</p>
-                <!-- <div class="btn-group" role="group">
+                <div class="btn-group" role="group">
                     <p>
                         <a href="https://ieeexplore.ieee.org/document/9220262" class="btn" target="_blank" role="button">Paper</a>
                         <a href="documents/shatwell2020two_slides.pdf" class="btn" target="_blank" role="button">Slides</a>
                         <a href="https://github.com/dshatwell23/2-dof-pid-control" class="btn" target="_blank" role="button">Code</a>
                     </p>
-                </div> -->
-                <div>
-                    <a href="https://ieeexplore.ieee.org/document/9220262" class="btn" target="_blank" role="button">
-                        <button type="button" class="btn btn-primary btn-sm">Paper</button>
-                    </a>
-                    <a href="documents/shatwell2020two_slides.pdf" class="btn" target="_blank" role="button">
-                        <button type="button" class="btn btn-primary btn-sm">Slides</button>
-                    </a>
-                    <a href="https://github.com/dshatwell23/2-dof-pid-control" class="btn" target="_blank" role="button">
-                        <button type="button" class="btn btn-primary btn-sm">Code</button>
-                    </a>
                 </div>
             </div>
 
@@ -257,23 +193,12 @@
                 <h4 class="project">David Shatwell, Joaquin Verastegui, John Rojas</h4>
                 <img src="images/poster_lvds_to_ethernet.png" alt="poster_lvds_to_ethernet" class="thumbnail">
                 <p>The objective of this project was to design and implement a system capable of transmitting data at high speeds from the JARS 2.0 radar to a remote computer through Gigabit Ethernet using a system on chip (SoC). The system has two main stages: (i) data acquisition from the LVDS interface and (ii) data transmission to the computer through a communication protocol. In order to acquire data from the LVDS interface, the FPGA was used to implement a system capable of multiplexing and copying the data to a memory shared with the processor. Then, a program running on the processor was used to read the data from the shared memory and send it to the PC with the UDP protocol.</p>
-                <!-- <div class="btn-group" role="group">
+                <div class="btn-group" role="group">
                     <p>
                         <a href="documents/shatwell2019data_en.pdf" class="btn" target="_blank" role="button">Paper (EN)</a>
                         <a href="documents/shatwell2019data_es.pdf" class="btn" target="_blank" role="button">Paper (ES)</a>
                         <a href="https://github.com/dshatwell23/lvds-to-gige" class="btn" target="_blank" role="button">Code</a>
                     </p>
-                </div> -->
-                <div>
-                    <a href="documents/shatwell2019data_en.pdf" class="btn" target="_blank" role="button">
-                        <button type="button" class="btn btn-primary btn-sm">Paper (EN)</button>
-                    </a>
-                    <a href="documents/shatwell2019data_es.pdf" class="btn" target="_blank" role="button">
-                        <button type="button" class="btn btn-primary btn-sm">Paper (ES)</button>
-                    </a>
-                    <a href="https://github.com/dshatwell23/lvds-to-gige" class="btn" target="_blank" role="button">
-                        <button type="button" class="btn btn-primary btn-sm">Code</button>
-                    </a>
                 </div>
             </div>
         </div>
@@ -281,5 +206,6 @@
 
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+
 </body>
 </html>
