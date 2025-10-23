@@ -31,7 +31,7 @@
                     <li class="nav-item"><a class="nav-link" href="#papers">Papers</a></li>
                     <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
                     <li class="nav-item"><a class="nav-link" href="https://github.com/dshatwell23" target="_blank">GitHub</a></li>
-                    <li class="nav-item"><a class="nav-link" href="documents/CV_DavidShatwell_20251006.pdf" target="_blank">CV</a></li>
+                    <li class="nav-item"><a class="nav-link" href="documents/CV_DavidShatwell_20251022.pdf" target="_blank">CV</a></li>
                     <li class="nav-item"><a class="nav-link" href="https://drive.google.com/file/d/1zt5OpxPC8w0D_sRE_zHgwTsRExBRHs64/view?usp=share_link" target="_blank">GRE</a></li>
                     <li class="nav-item"><a class="nav-link" href="https://drive.google.com/file/d/1WZnjf8Ah3io-9OVUNMhuRxgy0kS_bKLI/view?usp=share_link" target="_blank">TOEFL</a></li>
                 </ul>
@@ -73,7 +73,7 @@
                     <!-- Email: <a href="mailto:dshatwell23@gmail.com">dshatwell23&#64;gmail.com</a> -->
                     Email: dshatwell23 [at] gmail (dot) com
                 </p>
-                <p>Research interests: Geo-Localization, 3D Vision, Multimodal Retrieval</p>
+                <p>Research interests: Geo-Localization, 3D Vision, Multimodal Learning</p>
             </div>
         </div>
 
@@ -81,7 +81,7 @@
         
         <div class="row row-content">
             <h2 id="bio">Bio</h2>
-            <p class="bio">I am a 3rd year PhD student working under Dr. Mubarak Shah at the Center for Research in Computer Vision (CRCV) at UCF. My current research focuses on geo-temporal image retrieval and 3D reconstruction. Previously, I was a researcher in the R&D department at <a href="http://www.hochschildmining.com/en/home" target="_blank">Hochschild Mining</a>, a gold and silver mining company operating in Peru. In Hochschild, I am currently responsible for the Ore Sorting Research Lab, where we are developing new mineral classification algorithms using computer vision and machine learning. Previously, I did an internship in the R&D department at the <a href="https://www.igp.gob.pe/observatorios/radio-observatorio-jicamarca/?page_id=6609" target="_blank">Jicamarca Radio Observatory</a>, working with FPGAs and microprocessors under the supervision of <a href="https://www.igp.gob.pe/observatorios/radio-observatorio-jicamarca/?page_id=9288" target="_blank">Joaquin Verastegui</a> and <a href="https://www.igp.gob.pe/observatorios/radio-observatorio-jicamarca/?page_id=9079" target="_blank">John Rojas</a>. I have also worked as a computer vision consultant in occupational health clinic <a href="https://wh.com.pe/" target="_blank">Work & Health</a>, developing projects using pose estimation and thermal imaging.</p>
+            <p class="bio">I am a 3rd year PhD student working under Dr. Mubarak Shah at the Center for Research in Computer Vision (CRCV) at UCF. My current research focuses on geo-temporal image retrieval and 3D reconstruction. Previously, I was a researcher in the R&D department at <a href="http://www.hochschildmining.com/en/home" target="_blank">Hochschild Mining</a>, a gold and silver mining company operating in Peru. In Hochschild, I was responsible for the Ore Sorting Research Lab, where we focused on developing new mineral classification algorithms using computer vision and machine learning. Previously, I did an internship in the R&D department at the <a href="https://www.igp.gob.pe/observatorios/radio-observatorio-jicamarca/?page_id=6609" target="_blank">Jicamarca Radio Observatory</a>, working with FPGAs and microprocessors under the supervision of <a href="https://www.igp.gob.pe/observatorios/radio-observatorio-jicamarca/?page_id=9288" target="_blank">Joaquin Verastegui</a> and <a href="https://www.igp.gob.pe/observatorios/radio-observatorio-jicamarca/?page_id=9079" target="_blank">John Rojas</a>. I have also worked as a computer vision consultant in occupational health clinic <a href="https://wh.com.pe/" target="_blank">Work & Health</a>, developing projects using pose estimation and thermal imaging.</p>
             <p class="bio">I got my undergraduate degree from <a href="https://utec.edu.pe/en" target="_blank">UTEC</a> in Electrical Engineering and finished first of my class. Under the supervision of <a href="https://utec.edu.pe/en/faculty/victor-manuel-murray-herrera" target="_blank">Victor Murray</a>, I wrote my honors thesis on mineral classification using color and texture features of digital images. My thesis achieved the highest possible grade and won second place in the undergraduate thesis competition organized by UTEC. During my studies, I also worked as TA of the Digital Circuits Lab, designing, supervising, and grading lab projects with FPGAs.</p>
         </div>
 
@@ -165,13 +165,14 @@
 
         <hr>
         <div class="row">
-            <h2 id="projects">Projects</h2>
+            <h2 id="projects">Papers</h2>
 
             <div class="project">
                 <h3>GT-Loc: Unifying When and Where in Images Through a Joint Embedding Space</h3>
-                <h4 style="color: red;">Oral Presentation</h4>
+                <h4>International Conference on Computer Vision, ICCV 2025</h4>
+                <h4 style="color: red;">Oral Presentation (top 0.6%)</h4>
                 <h4 class="project">David Shatwell, Ishan Rajendrakumar Dave, Sirnam Swetha, Mubarak Shah</h4>
-                <img src="images/gtloc_poster.png" alt="teaser_gtloc" class="thumbnail">
+                <img src="images/gtloc_teaser.png" alt="teaser_gtloc" class="thumbnail">
                 <p>Timestamp prediction aims to determine when an image was captured using only visual information, supporting applications such as metadata correction, retrieval, and digital forensics. In outdoor scenarios, hourly estimates rely on cues like brightness, hue, and shadow positioning, while seasonal changes and weather inform date estimation. However, these visual cues significantly depend on geographic context, closely linking timestamp prediction to geo-localization. To address this interdependence, we introduce GT-Loc, a novel retrieval-based method that jointly predicts the capture time (hour and month) and geo-location (GPS coordinates) of an image. Our approach employs separate encoders for images, time, and location, aligning their embeddings within a shared high-dimensional feature space. Recognizing the cyclical nature of time, instead of conventional contrastive learning with hard positives and negatives, we propose a temporal metric-learning objective providing soft targets by modeling pairwise time differences over a cyclical toroidal surface. We present new benchmarks demonstrating that our joint optimization surpasses previous time prediction methods, even those using the ground-truth geo-location as an input during inference. Additionally, our approach achieves competitive results on standard geo-localization tasks, and the unified embedding space facilitates compositional and text-based image retrieval.</p>
                 <div>
                     <a href="https://davidshatwell.com/gtloc.github.io/" class="btn" target="_blank" role="button">
@@ -180,49 +181,24 @@
                     <a href="https://arxiv.org/abs/2507.10473" class="btn" target="_blank" role="button">
                         <button type="button" class="btn btn-primary btn-sm">Arxiv</button>
                     </a>
-                </div>
-            </div>
-
-
-
-
-
-            <div class="project">
-                <h3>Control Software for Color and 3D Profiling Cameras</h3>
-                <h4 class="project">Hugo Negreyros, David Shatwell</h4>
-                <img src="images/poster_camera_control.png" alt="poster_camera_control" class="thumbnail">
-                <p>Line-scan cameras are cameras that, unlike area-scan cameras, acquire a single row instead of a full 2D image. This type of cameras has several advantages over the traditional area-scan technology. In particular, they can capture images of objects moving at very high speeds with very little motion blur. In order to form 2D images, line-scan cameras are usually used on applications where a conveyor belt moves objects at a constant speed. In this project, we implemented a program used to synchronize and control two cameras at the same time. The first camera is a color camera (Teledyne Dalsa Spyder 3 GigE), while the second one is a 3D profiling camera (Automation Technology C2-2040 GigE), both of which are controlled using Gigabit Ethernet. We use the cameras to acquire color images, height profiles, and laser reflection/dispersion images, which are useful for identifying material properties in sorting applications.</p>
-                <!-- <div class="btn-group" role="group">
-                    <p>
-                        <a href="https://github.com/dshatwell23/linescan-cameras-control" class="btn" target="_blank" role="button">Code</a>
-                    </p>
-                </div> -->
-                <div>
-                    <a href="https://github.com/dshatwell23/linescan-cameras-control" class="btn" target="_blank" role="button">
-                        <button type="button" class="btn btn-primary btn-sm">Code</button>
+                    <a href="https://iccv.thecvf.com/media/PosterPDFs/ICCV%202025/544.png?t=1759974999.7209623" class="btn" target="_blank" role="button">
+                        <button type="button" class="btn btn-primary btn-sm">Poster</button>
                     </a>
                 </div>
             </div>
 
             <div class="project">
-                <h3>Ore Sorting using Color and Hyperspectral Imaging</h3>
-                <h4 class="project">David Shatwell, Victor Murray, Augusto Barton</h4>
-                <img src="images/poster_ore_sorting_color_hs.png" alt="poster_ore_sorting_color_hs" class="thumbnail">
-                <p>Sensor-based ore sorting is a technology used to classify mineralized and waste rocks with the goal of reducing operating costs. In the past, several classification algorithms using color or hyperspectral images have been proposed, but few of them use both types of images in order to achieve a higher classification performance. This paper presents a new algorithm that combines the best color, texture, and hyperspectral features in a fully autonomous way using machine learning. The proposed algorithm was tested with rock particles extracted from an underground mine located in the peruvian Andes. All images were manually classified by an expert geologist and then were analyzed in a chemical laboratory in order to estimate their gold and silver grade. The results achieved with the proposed method were very promising, with a Matthews' correlation coefficient (MCC)  of 0.9787 and a potential increase in recovery of 1.4% compared to other commercial ore sorting solutions. <strong>This paper was selected as one of 25 finalists in the Technological Innovation category of the National Mining Contest. The results of the paper will be presented in the <a href="https://perumin.com/perumin35/public/en" target="_blank">PERUMIN 35</a> conference on September 28, 2022.</strong></p>
-            </div>
-
-            <div class="project">
-                <h3>Ore Sorting using Color and Texture Features</h3>
+                <h3>Real Time Ore Sorting Using Color and Texture Analysis</h3>
+                <h4>International Journal of Mining Science and Technology, 2023</h4>
                 <h4 class="project">David Shatwell, Victor Murray, Augusto Barton</h4>
                 <img src="images/poster_ore_sorting_color_texture.png" alt="poster_ore_sorting_color_texture" class="thumbnail">
-                <p>Sensor-based ore sorting is a technology used to classify high-grade mineralized rocks from low-grade waste rocks to reduce operation costs. Many ore sorting algorithms using color images have been proposed in the past, but few validate their results using mineral grades or optimize the algorithms to classify rocks in real-time. This paper presents an ore sorting algorithm based on image processing and machine learning that is able to classify rocks from a gold and silver mine based on their grade. The algorithm is composed of four main stages: (i) image segmentation and partition into sub-images, (ii) feature extraction us- ing color statistics, principal component analysis, and wavelet texture analysis, (iii) sub-image classification using neural networks, and (iv) a voting system to determine the overall class of the rock. The algorithm was trained using rocks that a geologist manually classified according to their mineral content and rocks analyzed in a geochemical laboratory to determine their gold and silver grades. The proposed method was compared with other commonly used classification algorithms such as convolutional neural networks and support vector machines. The results produced a Matthews correlation coefficient of 0.961 points and a processing time under 44 ms, promising for real-time ore sorting applications. <strong>This paper has been presented to the <a href="https://www.journals.elsevier.com/international-journal-of-mining-science-and-technology" target="_blank">International Journal of Mining Science and Technology</a> and is currently being peer reviewed.</strong></p>
+                <p>Sensor-based ore sorting is a technology used to classify high-grade mineralized rocks from low-grade waste rocks to reduce operation costs. Many ore sorting algorithms using color images have been proposed in the past, but few validate their results using mineral grades or optimize the algorithms to classify rocks in real-time. This paper presents an ore sorting algorithm based on image processing and machine learning that is able to classify rocks from a gold and silver mine based on their grade. The algorithm is composed of four main stages: (i) image segmentation and partition into sub-images, (ii) feature extraction us- ing color statistics, principal component analysis, and wavelet texture analysis, (iii) sub-image classification using neural networks, and (iv) a voting system to determine the overall class of the rock. The algorithm was trained using rocks that a geologist manually classified according to their mineral content and rocks analyzed in a geochemical laboratory to determine their gold and silver grades. The proposed method was compared with other commonly used classification algorithms such as convolutional neural networks and support vector machines. The results produced a Matthews correlation coefficient of 0.961 points and a processing time under 44 ms, promising for real-time ore sorting applications.</p>
+                <div>
+                    <a href="https://www.sciencedirect.com/science/article/pii/S2095268623000502" class="btn" target="_blank" role="button">
+                        <button type="button" class="btn btn-primary btn-sm">Paper</button>
+                    </a>
+                </div>
             </div>
-        </div>
-
-
-
-
-
 
 
 
@@ -253,13 +229,6 @@
                 <h4 class="project">David Shatwell, Victor Murray, Augusto Barton</h4>
                 <img src="images/poster_ore_sorting_color_hs.png" alt="poster_ore_sorting_color_hs" class="thumbnail">
                 <p>Sensor-based ore sorting is a technology used to classify mineralized and waste rocks with the goal of reducing operating costs. In the past, several classification algorithms using color or hyperspectral images have been proposed, but few of them use both types of images in order to achieve a higher classification performance. This paper presents a new algorithm that combines the best color, texture, and hyperspectral features in a fully autonomous way using machine learning. The proposed algorithm was tested with rock particles extracted from an underground mine located in the peruvian Andes. All images were manually classified by an expert geologist and then were analyzed in a chemical laboratory in order to estimate their gold and silver grade. The results achieved with the proposed method were very promising, with a Matthews' correlation coefficient (MCC)  of 0.9787 and a potential increase in recovery of 1.4% compared to other commercial ore sorting solutions. <strong>This paper was selected as one of 25 finalists in the Technological Innovation category of the National Mining Contest. The results of the paper will be presented in the <a href="https://perumin.com/perumin35/public/en" target="_blank">PERUMIN 35</a> conference on September 28, 2022.</strong></p>
-            </div>
-
-            <div class="project">
-                <h3>Ore Sorting using Color and Texture Features</h3>
-                <h4 class="project">David Shatwell, Victor Murray, Augusto Barton</h4>
-                <img src="images/poster_ore_sorting_color_texture.png" alt="poster_ore_sorting_color_texture" class="thumbnail">
-                <p>Sensor-based ore sorting is a technology used to classify high-grade mineralized rocks from low-grade waste rocks to reduce operation costs. Many ore sorting algorithms using color images have been proposed in the past, but few validate their results using mineral grades or optimize the algorithms to classify rocks in real-time. This paper presents an ore sorting algorithm based on image processing and machine learning that is able to classify rocks from a gold and silver mine based on their grade. The algorithm is composed of four main stages: (i) image segmentation and partition into sub-images, (ii) feature extraction us- ing color statistics, principal component analysis, and wavelet texture analysis, (iii) sub-image classification using neural networks, and (iv) a voting system to determine the overall class of the rock. The algorithm was trained using rocks that a geologist manually classified according to their mineral content and rocks analyzed in a geochemical laboratory to determine their gold and silver grades. The proposed method was compared with other commonly used classification algorithms such as convolutional neural networks and support vector machines. The results produced a Matthews correlation coefficient of 0.961 points and a processing time under 44 ms, promising for real-time ore sorting applications. <strong>This paper has been presented to the <a href="https://www.journals.elsevier.com/international-journal-of-mining-science-and-technology" target="_blank">International Journal of Mining Science and Technology</a> and is currently being peer reviewed.</strong></p>
             </div>
 
             <div class="project">
