@@ -168,10 +168,51 @@
             <h2 id="projects">Papers</h2>
 
             <div class="project">
+                <h3>TIGeR: A Unified Framework for Time, Images and Geo-location Retrieval</h3>
+                <h4>IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) 2026</h4>
+                <h4 class="project">David G. Shatwell, Sirnam Swetha, Mubarak Shah</h4>
+                <img src="images/teaser_tiger.png" alt="teaser_tiger" class="thumbnail">
+                <p>Many real-world applications in digital forensics, urban monitoring, and environmental analysis require jointly reasoning about visual appearance, geolocation, and time. Beyond standard geo-localization and time-of-capture prediction, these applications increasingly demand more complex capabilities, such as retrieving an image captured at the same location as a query image but at a specified target time. We formalize this problem as Geo-Time Aware Image Retrieval and curate a diverse benchmark of 4.5M paired image–location–time triplets for training and 85k high-quality triplets for evaluation. We then propose TIGeR, a multi-modal-transformer–based model that maps image, geolocation, and time into a unified geo-temporal embedding space. TIGeR supports flexible input configurations (single-modality and multi-modality queries) and uses the same representation to perform (i) geo-localization, (ii) time-of-capture prediction, and (iii) geo-time–aware retrieval. By better preserving underlying location identity under large appearance changes, TIGeR enables retrieval based on where and when a scene is, rather than purely on visual similarity. Extensive experiments show that TIGeR consistently outperforms strong baselines and state-of-the-art methods by up to 16% on time-of-year, 8% time-of-day prediction, and 14% in geo-time aware retrieval recall, highlighting the benefits of unified geo-temporal modeling.</p>
+                <!-- <div>
+                    <a href="https://davidshatwell.com/gtloc.github.io/" class="btn" target="_blank" role="button">
+                        <button type="button" class="btn btn-primary btn-sm">Project Page</button>
+                    </a>
+                    <a href="https://arxiv.org/abs/2507.10473" class="btn" target="_blank" role="button">
+                        <button type="button" class="btn btn-primary btn-sm">Arxiv</button>
+                    </a>
+                    <a href="https://iccv.thecvf.com/media/PosterPDFs/ICCV%202025/544.png?t=1759974999.7209623" class="btn" target="_blank" role="button">
+                        <button type="button" class="btn btn-primary btn-sm">Poster</button>
+                    </a>
+                </div> -->
+            </div>
+
+            <div class="project">
+                <h3>VRR-QA: Visual Relational Reasoning in Videos Beyond Explicit Cues</h3>
+                <h4>IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) 2026</h4>
+                <h4 class="project">Sirnam Swetha, Rohit Gupta, Parth Parag Kulkarni, David G. Shatwell, Jeffrey A. Chan Santiago, Nyle Siddiqui, Joseph Fioresi, Mubarak Shah</h4>
+                <img src="images/vrr_qa_teaser.png" alt="teaser_vrr_qa" class="thumbnail">
+                <p>Video Question Answering (VideoQA) has made significant strides by leveraging multimodal learning to align visual and textual modalities. However, current benchmarks overwhelmingly focus on questions answerable through explicit visual content - actions, objects, and events directly observable within individual frames or short clips. To truly understand videos as humans do, models must go beyond what is directly shown, inferring hidden relationships and contextual cues that are only implied across frames. Humans naturally excel at such implicit reasoning, seamlessly integrating partial visual cues over time to infer motin dynamics, spatial layout and context, constructing a coherent mental model of the scene even when such relationships are never explicitly depicted. Current benchmarks fail to capture this essential aspect of video understanding. To address this gap, we introduce VRR-QA, a benchmark for Visual Relational Reasoning Beyond Explicit Cues. We curate our benchmark from creative and cinematic videos such as movies, that deliberately employ storytelling techniques which omit direct depictions of certain events or relations, requiring viewers to infer them. VRR-QA comprises meticulously expert-annotated QA pairs drawn from creative video clips covering genres across decades of content, from both live-action and animated titles. These annotations are deliberately challenging, crafted by authors, validated through multiple annotators, and benchmarked against human performance to ensure high quality. Our extensive evaluations on leading VideoQA models reveals consistent and significant performance degradation, underscoring their reliance on surface-level visual cues and highlighting the difficulty of implicit reasoning. Even the best model substantially underperforms human baselines with only 64% accuracy. Performance variations across models further illustrate the complexity and diversity of the challenges presented by VRR-QA. By releasing both dataset and data collection framework, VRR-QA establishes a rigorous, diverse, and reproducible testbed for advancing VideoQA.</p>
+                <div>
+                    <a href="https://swetha5.github.io/ImplicitQA/" class="btn" target="_blank" role="button">
+                        <button type="button" class="btn btn-primary btn-sm">Project Page</button>
+                    </a>
+                    <a href="https://arxiv.org/abs/2506.21742" class="btn" target="_blank" role="button">
+                        <button type="button" class="btn btn-primary btn-sm">Arxiv</button>
+                    </a>
+                    <a href="https://github.com/UCF-CRCV/ImplicitQA" class="btn" target="_blank" role="button">
+                        <button type="button" class="btn btn-primary btn-sm">Code</button>
+                    </a>
+                    <a href="https://huggingface.co/datasets/ucf-crcv/ImplicitQA" class="btn" target="_blank" role="button">
+                        <button type="button" class="btn btn-primary btn-sm">Dataset</button>
+                    </a>
+                </div>
+            </div>
+
+            <div class="project">
                 <h3>GT-Loc: Unifying When and Where in Images Through a Joint Embedding Space</h3>
                 <h4>International Conference on Computer Vision, ICCV 2025</h4>
                 <h4 style="color: red;">Oral Presentation (top 0.6%)</h4>
-                <h4 class="project">David Shatwell, Ishan Rajendrakumar Dave, Sirnam Swetha, Mubarak Shah</h4>
+                <h4 class="project">David G. Shatwell, Ishan Rajendrakumar Dave, Sirnam Swetha, Mubarak Shah</h4>
                 <img src="images/gtloc_teaser.png" alt="teaser_gtloc" class="thumbnail">
                 <p>Timestamp prediction aims to determine when an image was captured using only visual information, supporting applications such as metadata correction, retrieval, and digital forensics. In outdoor scenarios, hourly estimates rely on cues like brightness, hue, and shadow positioning, while seasonal changes and weather inform date estimation. However, these visual cues significantly depend on geographic context, closely linking timestamp prediction to geo-localization. To address this interdependence, we introduce GT-Loc, a novel retrieval-based method that jointly predicts the capture time (hour and month) and geo-location (GPS coordinates) of an image. Our approach employs separate encoders for images, time, and location, aligning their embeddings within a shared high-dimensional feature space. Recognizing the cyclical nature of time, instead of conventional contrastive learning with hard positives and negatives, we propose a temporal metric-learning objective providing soft targets by modeling pairwise time differences over a cyclical toroidal surface. We present new benchmarks demonstrating that our joint optimization surpasses previous time prediction methods, even those using the ground-truth geo-location as an input during inference. Additionally, our approach achieves competitive results on standard geo-localization tasks, and the unified embedding space facilitates compositional and text-based image retrieval.</p>
                 <div>
